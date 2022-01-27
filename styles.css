@@ -1,4 +1,5 @@
 /* Classes */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 * {
   font-family: Montserrat, sans-serif;
   font-weight: 400;
@@ -17,6 +18,7 @@
 .main-menu {
   display: flex;
   position: fixed;
+  z-index: 10;
   width: 64rem;
   height: 4rem;
   top: 2rem;
@@ -94,6 +96,22 @@ text-decoration: none;
   height: 40rem;
 }
 
+/* Section UX-UI */
+
+.flex-right{
+  display: flex;
+  flex-direction:column;
+  align-items: flex-end;
+}
+.header-secondary {
+  font-size: 10rem;
+  font-family: Anton;
+  text-align: left;
+  text-shadow: inset 1px 1px 1px  #000000;
+}
+
+/* Combo Classes */
+
 .max-size-small{
   width: 45rem;
 }
@@ -104,7 +122,6 @@ text-decoration: none;
   width: 80rem;
 }
 
-/* Combo Classes */
 body {
   font-family: Montserrat, sans-serif;
   font-size: 1rem;
