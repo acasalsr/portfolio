@@ -55,6 +55,14 @@ text-decoration: none;
   justify-content: flex-start;
   align-items: flex-start;
 }
+.flex-horizontal-left{
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
 .flex-horizontal-space-between{
   display:flex;
   justify-content: space-between;

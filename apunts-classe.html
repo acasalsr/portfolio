@@ -30,3 +30,77 @@
 Els ID són el element principal al igual que les etiquetes HTML tipus <p><h1>, etc.
 En canvi les class són les combo classes, que s'utilitzen per anar afegint propietats.
 -->
+
+
+<!--    
+    Podem afegir atributs al html per poder vincular-los al css
+    Per exemple:
+    <p es-explicacio>Hola</p>
+   
+    1/
+    <ul>
+        <li pal="cors">4 de cors</li>
+        <li pal="espases">4 de cors</li>
+        <li pal="trebols">4 de cors</li>
+    </ul>
+
+    -> Podem dotar el html i el css amb expresions:
+    per exemple si voleu posar amb bold desde 4 estrelles cap a munt 
+    ho podem fer així;
+    
+    2/
+     <ul>
+        <li pal="cors" cont="****">4 de cors</li>
+        <li pal="espases" cont="*****">5 de cors</li>
+        <li pal="trebols" cont="**">2 de cors</li>
+    </ul>
+
+    i el css seria:
+    [es-explicacip] { background-color: red }
+
+    1/
+    [pals="cors"] { background: pink }
+    [pals ="trebols"] { background: blue }
+
+    2/
+    [cont ^="****"] { font-weidth: bold;}
+-->
+
+<!--
+    Atributs:
+
+    ^= -> comenci per.
+    $= -> Acaba per.
+    i -> case insensitive.
+    *= -> Per buscar si una classe te un element. Per exemple <p obj="objecte">Lorem</p>
+        En el css si posem -> [obj*="ob"] -> significa que si l'etquita obj conté les lletres seguides i en mínuscules "ob" ha de fer el que tu diguis.
+    ~= -> busca la paraula tal i com l'hem escrit.
+    |= -> no busca la paraula sensera, sino separada per guions hi han d'estar al inici.
+-->
+
+<!-- 
+    Si tenim una class que sigui:
+    <p class="hola que tal"> Frase </p>
+
+    La css per convinar-ho tot podríem fer-ho així:
+    .hola.que.tal{ bac.... }
+    o
+    .que.tal.hola{ bac...}
+
+    es indiferent el order. Però podem anar convinant les classes. 
+-->
+
+<!-- 
+    Per poder fer convinacions amb els elements tipus <p> <li> <section>, etc..
+    podem fer <p class="hola-class">sdfsdf</p>
+
+    a la CSS hauria de ser:
+    p.hola-class { background-color...}
+
+    Si tenim una ID passarà el mateix:
+    <p id="hola-class">sdfsdf</p>
+
+    CSS:
+    p#hola-class{ color: red }
+-->
+Attributs:
