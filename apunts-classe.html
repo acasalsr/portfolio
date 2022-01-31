@@ -103,4 +103,53 @@ En canvi les class són les combo classes, que s'utilitzen per anar afegint prop
     CSS:
     p#hola-class{ color: red }
 -->
-Attributs:
+
+<!-- 
+
+    CSS prioritats:
+    
+    1. El últim és el que guanya quan són iguals. 
+    2. Els elements tenen menys prioritat que les classes. 
+    3. ID guanya per sobre de tots.
+    Però sempre podem afegir al html el ultimatum <p id="color" class="color2" styel="background: blue">hola</p>
+    Guanya el STYLE
+
+    Style > ID > class > element
+
+    Per calcular a una web quina prioritat tenen el que podem fer és puntuar amb un 1 o un 0 si el html és 1 present o no.
+
+    .cors{background: red;}
+    #favorite {.cors{background: red;}
+    li {.cors{background: red;}
+    li.cors{.cors{background: red;}
+
+
+    *IMPORTANT* Selector specificity
+
+            Sytle ID class element
+    .cors     0    0    1      0
+    #favorite 0    1    0      0   Guanyaria la ID en aquest cas
+    li        0    0    0      1
+    li.cors   0    0    1      1
+
+
+    Pero si per exemple:
+    li.cors:hover{.cors{background: blue;} -> guanyaria perquè hover actua com a PSEUDOCLASSES
+
+    També hi ha els PSEODOELEMENTS
+    
+    Es posen amb dos punts ":"
+    Exemple:
+
+    <div class="salutacio">Hola</div>
+
+    <style>
+        .salutacio::first-letter {
+            font-size: 300%;
+            font-weighy:bold;
+        }
+    </style>
+    En aquest cas fa la primera lletra
+    El before i el after són molt usats. Quan posem el disply: block veurem el que fiquem. Podem inclús ficar -> hover <-
+
+-->
