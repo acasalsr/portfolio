@@ -47,8 +47,29 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+#custom-buttom{
+  border: 4px solid #fee440;
+  border-radius: 1rem;
+  background-color: #fee5403f;
+}
+
 .div-link {
   text-decoration: none;
+  color: #1e1e1e;
+  padding: 0.5rem 2rem 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.div-link:hover {
+  color: #1e1e1e;
+  font-size: 1.1rem;
+  border: 4px solid #F15BB5;
+  background-color: #f15bb544;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 8px #5e1f454d;
+  transition-delay: .2ms;
+  transition-timing-function: ease-out;
 }
 
 /* Section header */
@@ -67,12 +88,6 @@
   align-content: flex-start;
   justify-content: flex-start;
   align-items: flex-start;
-}
-.flex-center {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
 }
 
 .grid-two-columns {
