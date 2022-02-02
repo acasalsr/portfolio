@@ -48,7 +48,7 @@
   margin-left: auto;
 }
 
-#custom-buttom{
+#custom-buttom {
   border: 4px solid #fee440;
   border-radius: 1rem;
   background-color: #fee5403f;
@@ -64,11 +64,11 @@
 .div-link:hover {
   color: #1e1e1e;
   font-size: 1.1rem;
-  border: 4px solid #F15BB5;
+  border: 4px solid #f15bb5;
   background-color: #f15bb544;
   border-radius: 1rem;
-  box-shadow: 1px 1px 8px #5e1f454d;
-  transition-delay: .2ms;
+  box-shadow: inset 1px 1px 10px 1px #5e1f458f;
+  transition-delay: 0.2ms;
   transition-timing-function: ease-out;
 }
 
@@ -172,7 +172,23 @@
   font-family: Anton;
   text-align: left;
   text-shadow: inset 1px 1px 1px #000000;
+  /* Animation */
+  animation-name: h2-animation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+
 }
+@keyframes h2-animation{
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+} 
+  to {
+    opacity: 1;
+    transform: translateY(0rem)
+  }
+}
+
 .text-shadow {
   text-shadow: 8px 8px 17px rgb(0 0 0 / 71%);
 }
