@@ -76,6 +76,12 @@
 .section-header {
   height: auto;
 }
+.section-ux-header {
+  height: 100vh;
+}
+.section-content-ux{
+  height: auto;
+}
 .background-image-header {
   position: absolute;
   z-index: -2;
@@ -95,6 +101,11 @@
   grid-template-columns: 1fr 1fr;
   column-gap: 6rem;
   align-items: start;
+}
+.grid-content-ux{
+  display: grid;
+  grid-template-columns: .5fr 1.5fr;
+  column-gap: 1rem;
 }
 .grid-wrapper-left {
   display: grid;
@@ -143,8 +154,13 @@
 .absolut-profile-image-backgroud {
   position: absolute;
   top: 0px;
-  right: 0px;
+  left: 0px;
   z-index: -1;
+}
+.absolute-ux-background-img{
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 .profile-background-photo {
   position: absolute;
@@ -204,6 +220,7 @@
   width: 80rem;
 }
 
+
 body {
   font-family: Montserrat, sans-serif;
   font-size: 1rem;
@@ -246,6 +263,15 @@ h3 {
   line-height: 1.2;
   font-weight: 700;
 }
+h4 {
+  font-family: Anton;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
 span {
   font-family: Anton;
 }
@@ -286,6 +312,13 @@ li {
 img {
   display: inline-block;
   max-width: 100%;
+}
+.img-ux-documentaction{
+  width: auto;
+}
+.img-ux-tool{
+  max-width: auto;
+  height: 4rem;
 }
 
 .text-color-blue {
@@ -532,6 +565,14 @@ img {
 
 .align-center {
   margin-right: auto;
+  margin-left: auto;
+}
+.align-left {
+  margin-right: auto;
+  margin-left: 0;
+}
+.align-right {
+  margin-right: 0;
   margin-left: auto;
 }
 
